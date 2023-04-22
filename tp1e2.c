@@ -1,3 +1,9 @@
+
+/*Se desea hacer el siguiente cálculo: (k-n)*y/(3-r), donde k, n, r e y son enteros (int) 
+que se ingresan por teclado. Se debe utilizar una función para realizar el cálculo. 
+El resultado (float) debe imprimirse en pantalla desde el programa principal (main). 
+Considerar que k debe ser mayor que n para poder hacer el cálculo y que r debe ser distinto 
+de 3. Utilizar lenguaje C.*/
 #include <stdio.h>
 
 int main(void){
