@@ -1,6 +1,11 @@
+/*
+Generar un subprograma que permita, dado un vector de 100 posiciones, obtener el promedio de los elementos pares 
+del mismo (no de las posiciones pares, sino de los valores pares que tiene cargado en cada posición). Los valores
+ del vector son float. Guardar el resultado del promedio en un archivo.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include<conio.h>
 #include <string.h>
 
@@ -25,8 +30,6 @@ int aux;
                 
 for (size_t i = 0; i < 100; i++)
 {
-    /* printf(" %.2f ", vector[i]); */
-    /*if (fmod(vector[i], 2) == 0)*/
     aux = vector[i] * 100;
 
     if(aux % 2 == 0)
@@ -37,14 +40,12 @@ for (size_t i = 0; i < 100; i++)
     }else{
         printf("\n %.2f  es impar", vector[i]);
     }
-    
-    
+
 }
 promedio = suma / cant;
 char texto[] = "";
 
 sprintf(texto, "%g", promedio);
-
 
 printf("\n La suma de los pares da: %.2f", suma);
 printf("\n El promedio es: %.2f", promedio);
