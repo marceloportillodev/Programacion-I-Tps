@@ -34,25 +34,18 @@ for (size_t i = 0; i < 100; i++)
 
     if(aux % 2 == 0)
     {
-        printf("\n %.2f  es par", vector[i]);
         suma = suma + vector[i];
         cant++;
-    }else{
-        printf("\n %.2f  es impar", vector[i]);
     }
 
 }
 promedio = suma / cant;
 char texto[] = "";
 
-sprintf(texto, "%g", promedio);
-
-printf("\n La suma de los pares da: %.2f", suma);
-printf("\n El promedio es: %.2f", promedio);
-
 FILE *fp;
 fp = fopen ( "resultado.txt", "w");
-fputs(texto, fp);        
+fprintf(fp,"El promedio de los numeros pares es: %.2f", promedio);
+    
 fclose(fp);
 
 }
