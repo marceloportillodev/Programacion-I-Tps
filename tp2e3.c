@@ -13,7 +13,7 @@ Luego imprimir esas cantidades en la pantalla.
 int main(void){
 
 char cadena[100];
-char numeros[12][12];
+char numeros[10][10];
 int quince=0;
 int doce=0;
 int aux=0;
@@ -34,9 +34,9 @@ if(fp == NULL){
     }
     fclose(fp);
 
-    for (size_t i = 0; i <12; i++)
+    for (size_t i = 0; i <10; i++)
         {
-            printf("\n %s", numeros[i]);
+            //printf("\n  n: %s", numeros[i]);
             if (strcmp(numeros[i],"15")== 0)
             {
                 quince++;
