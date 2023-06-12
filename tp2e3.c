@@ -8,8 +8,6 @@ Luego imprimir esas cantidades en la pantalla.
 #include<stdlib.h>
 #include<string.h>
 
-
-
 int main(void){
 
 char cadena[100];
@@ -17,7 +15,6 @@ char numeros[10][10];
 int quince=0;
 int doce=0;
 int aux=0;
-
 
 FILE *fp;
 fp = fopen("archivo.txt","r");
